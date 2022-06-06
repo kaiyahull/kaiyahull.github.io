@@ -25,12 +25,9 @@
 
 <body>
 
-    <!-- No defined header section -->
 
-    <!-- Main content goes here split into sections/fragments -->
     <main>
 
-        <!-- Utilizes flexbox styling not taught in class -->
         <section class="fragment fragment-one">
             <div class="headers">
                 <h1> Kaiya Hull </h1>
@@ -38,96 +35,86 @@
             </div>
 
             <div class="learn">
-
-                <!-- You could hyperlink this down with a smooth scroll -->
-                <p> learn more </p>
+                <a href="#about-me">learn more</a>
+                <br>
                 <i class="fas fa-chevron-down"></i>
             </div>
 
         </section>
         <section class="fragment fragment-two">
-            <h2>About Me</h2>
+            <h2 id ="about-me">About Me</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 mx-auto text-center">
-                        <img src = "assets/images/yoda.png" style="display:inline;"
-                         width="500"
-                         height="650"
-                         id="yoda">
-                        </div>  
-                        <!-- Edit this text with a brief intoduction / brand statement etc. -->
-
-                        <div class="col-lg-9 mx-auto text-center">
-                        <h5 class="section-heading">
-                            Hello! My name is Kaiya.</h5>
-
-                            
-                        
-
-                       
+                    <div class="col-md">
+                        <br>
+                        <br>
+                        <br>
+                        <img src = "assets/images/about.jpeg" style="display: inline"
+                        width = "450"
+                        height="300"
+                        id="yoda">
+                    </div>
+                    <div class="col-md">
+                    <h5 class="section-heading">
+                        Hello! My name is Kaiya.</h5>
+                    <div class="about-me-info">
+                    <p> I am a motivated data analyst passionate about combining data analysis with a background in Biology and 
+                        Health Services Administration. I hold a certificate in Data Analytics and Visualization fromthe University 
+                        of Texas with skills in Excel, VBA, Python, JavaScript, SQL, and Tableau. I am a valuable team member who 
+                        enjoys working collaboratively with diverse groups to fulfill the needs of the organization. I have been 
+                        recognized as a self-starter with strong organizational and time-management skills. I am excited about 
+                        opportunities to apply both my experience and education to bring a meaningful to an organization. I am 
+                        a strong believer that learning never stops and am eager to continue acquiring new skills and sharpening 
+                        those I already have.  
+                    </p>
+                    </div>
+                    <br>
+                    <p> In my spare time, you can catch me with my dog, Yoda, exploring new food spots in Houston, 
+                        and practicing my data skills. 
+                    </p>
+                    <br>
                     </div>
                 </div>
             </div>
 
 
             <div class="learn">
-                <!-- You could hyperlink this down with a smooth scroll -->
-                <p> see why you should hire me </p>
+                <a href="#things-made">see my portfolio</a>
+                <br>
                 <i class="fas fa-chevron-down"></i>
             </div>
 
         </section>
         <section class="fragment fragment-three">
-            <h3>Things I've Made</h3>
+            
+            <h3 id="things-made">Things I've Made</h3>
             <hr class="title-underline">
-            <div class="container carousel-container">
-
-                <!-- begin carousel -->
-                <!-- you should replace the placeholder images with actual images from your projects -->
-                <!-- images should be 800*600 or a matching ratio for best results -->
-                <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#portfolioCarousel" data-slide-to="0" class="active custom-indicator">
-                        </li>
-                        <li data-target="#portfolioCarousel" data-slide-to="1" class="custom-indicator"></li>
-                        <li data-target="#portfolioCarousel" data-slide-to="2" class="custom-indicator"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-
-                            <!--image here -->
-                            <img src="assets/images/placeholder.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                <button class="btn btn-primary">View Code</button>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-
-                            <!--image here -->
-                            <img src="assets/images/placeholder.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                <button class="btn btn-primary">View Code</button>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-
-                            <!--image here -->
-                            <img src="assets/images/placeholder.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                <button class="btn btn-primary">View Code</button>
-                            </div>
-                        </div>
+            <div class="container-portfolio">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="https://github.com/kaiyahull/Belly_Button_Biodiversity">
+                            <img src="assets/images/bellybutton.gif"
+                                width = "450"
+                                height = "300">
+                        </a>
                     </div>
-
+                    <div class="col-md-3">
+                        <a href="https://github.com/kaiyahull/Mapping_Earthquakes">
+                            <img src="assets/images/map.gif"
+                                width="450"
+                                height="300">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://github.com/PDob02/Group_Project_May_2022">
+                            <img src="assets/images/movies.gif"
+                                width="450"
+                                height="300">
+                        </a>
+                    </div>
                 </div>
             </div>
-
+            </hr>
         </section>
         <section class="fragment fragment-four">
 
@@ -149,12 +136,13 @@
             <h3>My Education</h3>
             <hr class="title-underline">
 
-            <!-- Don't forget to swap out the universities and education to match your own-->
             <div class="container">
                 <h5> University of Texas at Austin</h5>
                 <p class="credential"> Data Analytics Bootcamp | 2022</p>
+                <h5> California State Univeristy San Bernardino</h5>
+                <p class="credential"> Master of Science Health Services Administration | 2022</p>
                 <h5> University of Portland</h5>
-                <p class="credential"> B.S. Biology | 2012 - 2016</p>
+                <p class="credential"> B.S. Biology | 2016</p>
 
             </div>
         </section>
@@ -166,12 +154,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h6>kaiya hull</h6>
-
-                        <!--update these links to match your own social media profiles -->
+                        <h6>kaiya hull
+                        </h6>
+                        <h7>connect with me here</h7>
+                        <br>
                         <a href="https://linkedin.com/in/kaiyahull" class="social-icon"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/kaiyahull" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="mailto:<kaiyahull@outlook.com>" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:kaiyahull@outlook.com>" class="social-icon"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
